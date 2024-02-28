@@ -1,13 +1,23 @@
 class FtoC extends ConsoleProgram {
 
   /**
-  * Description
-  * @author:
+  * Converts Fahrenheit to Celsius
+  * @George D.
   */
   
   public void run() {
+    double dblCelsius;
+    double dblFahrenheit;
     
-    // start coding here
+    // Get Fahrenheit
+    dblFahrenheit = readDouble("Enter the temperature in degrees Fahrenheit: ");
+
+    // Computing Area
+    dblCelsius = 5.0/9.0 * (dblFahrenheit - 32);
+
+    // Output Result
+    System.out.println(dblFahrenheit + " degrees Fahrenheit = " + dblCelsius + " degrees Celsius.");
+
     
   }
 }
